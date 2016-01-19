@@ -1,0 +1,404 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class stocks.runners.JPMorganTestLoaderTest</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class stocks.runners.JPMorganTestLoaderTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/stocks.runners.html">stocks.runners</a> &gt; JPMorganTestLoaderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.013s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRun</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-01-19 13:24:33.840  INFO 21385 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [stocks.runners.JPMorganTestLoaderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-01-19 13:24:33.841  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-01-19 13:24:33.842  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2016-01-19 13:24:33.842  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2016-01-19 13:24:33.842  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@63bfa62e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@754e7c92, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6b20b656, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c2e6ef9]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.1.RELEASE)
+
+2016-01-19 13:24:33.860  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Starting JPMorganTestLoaderTest on Giorgoss-MacBook-Pro.local with PID 21385 (/Users/allemaos/workspace_intelliJ/jpmorganTest.final/build/classes/test started by allemaos in /Users/allemaos/workspace_intelliJ/jpmorganTest.final)
+2016-01-19 13:24:33.860  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : No active profile set, falling back to default profiles: default
+2016-01-19 13:24:33.862  INFO 21385 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e7586a8: startup date [Tue Jan 19 13:24:33 EET 2016]; root of context hierarchy
+2016-01-19 13:24:34.290  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : .... Loading stocks
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : TEA --&gt;Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : POP --&gt;Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : ALE --&gt;Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=0.0}
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : GIN --&gt;Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoStocksLoader     : JOE --&gt;Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=0.0}
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : .... Trades Phase:
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : .... Initializing trades
+2016-01-19 13:24:34.291  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.292  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 2[BUY], (price: 20.0)
+2016-01-19 13:24:34.293  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 22[BUY], (price: 30.0)
+2016-01-19 13:24:34.295  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (GIN) 6[SELL], (price: 40.0)
+2016-01-19 13:24:34.297  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (JOE) 6[BUY], (price: 50.0)
+2016-01-19 13:24:34.298  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : .... Loading more trades
+2016-01-19 13:24:34.299  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 40.0 and simulated price: 40.89
+2016-01-19 13:24:34.299  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (GIN) 1[BUY], (price: 40.89)
+2016-01-19 13:24:34.300  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.300  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 20.0 and simulated price: 20.62
+2016-01-19 13:24:34.300  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 3[BUY], (price: 20.62)
+2016-01-19 13:24:34.302  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 30.0 and simulated price: 30.88
+2016-01-19 13:24:34.302  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 15[SELL], (price: 30.88)
+2016-01-19 13:24:34.304  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 30.88 and simulated price: 30.96
+2016-01-19 13:24:34.304  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 9[SELL], (price: 30.96)
+2016-01-19 13:24:34.306  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.306  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 20.62 and simulated price: 21.05
+2016-01-19 13:24:34.306  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 4[BUY], (price: 21.05)
+2016-01-19 13:24:34.308  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.308  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.308  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.308  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 30.96 and simulated price: 31.2
+2016-01-19 13:24:34.308  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 2[BUY], (price: 31.2)
+2016-01-19 13:24:34.310  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.310  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 21.05 and simulated price: 21.36
+2016-01-19 13:24:34.310  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 1[BUY], (price: 21.36)
+2016-01-19 13:24:34.312  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 31.2 and simulated price: 31.75
+2016-01-19 13:24:34.312  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 14[BUY], (price: 31.75)
+2016-01-19 13:24:34.314  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 21.36 and simulated price: 22.3
+2016-01-19 13:24:34.314  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 2[BUY], (price: 22.3)
+2016-01-19 13:24:34.316  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 31.75 and simulated price: 32.73
+2016-01-19 13:24:34.316  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 20[SELL], (price: 32.73)
+2016-01-19 13:24:34.317  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 22.3 and simulated price: 23.09
+2016-01-19 13:24:34.317  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 3[SELL], (price: 23.09)
+2016-01-19 13:24:34.319  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 23.09 and simulated price: 23.56
+2016-01-19 13:24:34.319  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (POP) 5[BUY], (price: 23.56)
+2016-01-19 13:24:34.321  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : @stock current price: 32.73 and simulated price: 32.94
+2016-01-19 13:24:34.321  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : Generated : (ALE) 21[SELL], (price: 32.94)
+2016-01-19 13:24:34.323  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : **There are no shares to trade for this stock
+2016-01-19 13:24:34.323  INFO 21385 --- [    Test worker] stocks.runners.StockRepoTradesLoader     : All Trades size: 17
+2016-01-19 13:24:34.324  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : # Stocks Table:
+2016-01-19 13:24:34.324  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : TEA --&gt;Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.324  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : POP --&gt;Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}
+2016-01-19 13:24:34.324  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : ALE --&gt;Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}
+2016-01-19 13:24:34.324  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : GIN --&gt;Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : JOE --&gt;Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : # Dividend Yield for every stock:
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : POP - : 0.34
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : ALE - : 0.7
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : GIN - : 0.05
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : JOE - : 0.26
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : # PERatio for every stock:
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : POP - : 69.38
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : ALE - : 47.18
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : GIN - : 836.0
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : JOE - : 192.31
+2016-01-19 13:24:34.325  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : # Stock Price for every stock:
+2016-01-19 13:24:34.326  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : POP - : 21.2
+2016-01-19 13:24:34.326  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : ALE - : 30.93
+2016-01-19 13:24:34.326  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : GIN - : 40.11
+2016-01-19 13:24:34.326  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : JOE - : 50.0
+2016-01-19 13:24:34.326  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : # GBCEAllShareIndex: 33.86
+2016-01-19 13:24:34.327  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoader        : NOTE: LastDividend of TEA is 0.0 - this stock is not valid for our calculations
+2016-01-19 13:24:34.327  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Started JPMorganTestLoaderTest in 0.482 seconds (JVM running for 4.166)
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Loading..
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.330  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.331  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.332  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.333  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.334  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.335  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674317, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=SELL, shares=3, price=23.09}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674317, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=SELL, shares=3, price=23.09}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674319, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=5, price=23.56}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.336  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674317, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=SELL, shares=3, price=23.09}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674319, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=5, price=23.56}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674321, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=21, price=32.94}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.337  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674317, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=SELL, shares=3, price=23.09}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674319, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=5, price=23.56}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674321, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=21, price=32.94}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674291, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=20.0}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674293, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=22, price=30.0}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674295, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=SELL, shares=6, price=40.0}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674297, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=6, price=50.0}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674298, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}, tradeType=BUY, shares=1, price=40.89}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674300, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=3, price=20.62}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674302, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=15, price=30.88}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674304, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=9, price=30.96}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674306, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=4, price=21.05}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674308, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=2, price=31.2}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674310, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=1, price=21.36}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674312, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=BUY, shares=14, price=31.75}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674314, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=2, price=22.3}
+2016-01-19 13:24:34.338  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674316, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=20, price=32.73}
+2016-01-19 13:24:34.339  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674317, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=SELL, shares=3, price=23.09}
+2016-01-19 13:24:34.339  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674319, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}, tradeType=BUY, shares=5, price=23.56}
+2016-01-19 13:24:34.339  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : Trade{timestamp=1453202674321, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}, tradeType=SELL, shares=21, price=32.94}
+2016-01-19 13:24:34.339  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : StockManager is Loaded: true
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : TEA - updated stock after recordTrade: Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : POP - updated stock after recordTrade: Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : ALE - updated stock after recordTrade: Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : GIN - updated stock after recordTrade: Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : JOE - updated stock after recordTrade: Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : # Stocks Table:
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : TEA --&gt;Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=0.0}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : POP --&gt;Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=23.56}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : ALE --&gt;Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.94}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : GIN --&gt;Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.89}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : JOE --&gt;Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : # Dividend Yield for every stock:
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : POP - : 0.34
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : ALE - : 0.7
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : GIN - : 0.05
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : JOE - : 0.26
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : # PERatio for every stock:
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : POP - : 69.38
+2016-01-19 13:24:34.340  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : ALE - : 47.18
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : GIN - : 836.0
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : JOE - : 192.31
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : # Stock Price for every stock:
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : POP - : 21.29
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : ALE - : 30.99
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : GIN - : 40.11
+2016-01-19 13:24:34.341  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : JOE - : 50.0
+2016-01-19 13:24:34.342  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : # GBCEAllShareIndex: 33.92
+2016-01-19 13:24:34.342  INFO 21385 --- [    Test worker] stocks.runners.JPMorganTestLoaderTest    : NOTE: LastDividend of TEA is 0.0 - this stock is not valid for our calculations
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.0</a> at Jan 19, 2016 1:24:34 PM</p>
+</div>
+</div>
+</body>

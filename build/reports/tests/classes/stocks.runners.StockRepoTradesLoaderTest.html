@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class stocks.runners.StockRepoTradesLoaderTest</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class stocks.runners.StockRepoTradesLoaderTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/stocks.runners.html">stocks.runners</a> &gt; StockRepoTradesLoaderTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.042s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRun</td>
+<td>0.042s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2016-01-19 13:24:34.350  INFO 21385 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [stocks.runners.StockRepoTradesLoaderTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-01-19 13:24:34.351  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-01-19 13:24:34.352  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2016-01-19 13:24:34.352  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+2016-01-19 13:24:34.352  INFO 21385 --- [    Test worker] o.s.t.c.s.DefaultTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6f5741a1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@79567e2e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67fa7c04, org.springframework.test.context.support.DirtiesContextTestExecutionListener@579cb73e]
+2016-01-19 13:24:34.353  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : .... Trades Phase:
+2016-01-19 13:24:34.354  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : .... Initializing trades
+2016-01-19 13:24:34.354  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (TEA) 88[BUY], (price: 10.0)
+2016-01-19 13:24:34.355  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (POP) 53[SELL], (price: 20.0)
+2016-01-19 13:24:34.357  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (ALE) 80[BUY], (price: 30.0)
+2016-01-19 13:24:34.359  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 20[BUY], (price: 40.0)
+2016-01-19 13:24:34.361  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (JOE) 36[BUY], (price: 50.0)
+2016-01-19 13:24:34.362  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674354 --&gt;Trade{timestamp=1453202674354, stock=Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=10.0}, tradeType=BUY, shares=88, price=10.0}
+2016-01-19 13:24:34.362  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674355 --&gt;Trade{timestamp=1453202674355, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=20.0}, tradeType=SELL, shares=53, price=20.0}
+2016-01-19 13:24:34.362  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674357 --&gt;Trade{timestamp=1453202674357, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=30.0}, tradeType=BUY, shares=80, price=30.0}
+2016-01-19 13:24:34.363  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674359 --&gt;Trade{timestamp=1453202674359, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=40.0}, tradeType=BUY, shares=20, price=40.0}
+2016-01-19 13:24:34.363  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674361 --&gt;Trade{timestamp=1453202674361, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=36, price=50.0}
+2016-01-19 13:24:34.363  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : .... Loading more trades
+2016-01-19 13:24:34.363  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 30.0 and simulated price: 30.75
+2016-01-19 13:24:34.363  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (ALE) 57[BUY], (price: 30.75)
+2016-01-19 13:24:34.365  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 40.0 and simulated price: 40.13
+2016-01-19 13:24:34.365  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 53[BUY], (price: 40.13)
+2016-01-19 13:24:34.367  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 30.75 and simulated price: 31.0
+2016-01-19 13:24:34.367  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (ALE) 94[BUY], (price: 31.0)
+2016-01-19 13:24:34.369  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 20.0 and simulated price: 20.59
+2016-01-19 13:24:34.369  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (POP) 81[BUY], (price: 20.59)
+2016-01-19 13:24:34.371  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 40.13 and simulated price: 40.26
+2016-01-19 13:24:34.371  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 66[SELL], (price: 40.26)
+2016-01-19 13:24:34.373  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 31.0 and simulated price: 31.79
+2016-01-19 13:24:34.373  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (ALE) 6[BUY], (price: 31.79)
+2016-01-19 13:24:34.375  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 10.0 and simulated price: 10.13
+2016-01-19 13:24:34.375  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (TEA) 94[SELL], (price: 10.13)
+2016-01-19 13:24:34.377  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 10.13 and simulated price: 10.89
+2016-01-19 13:24:34.377  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (TEA) 53[SELL], (price: 10.89)
+2016-01-19 13:24:34.379  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 40.26 and simulated price: 40.67
+2016-01-19 13:24:34.379  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 95[SELL], (price: 40.67)
+2016-01-19 13:24:34.381  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 31.79 and simulated price: 32.71
+2016-01-19 13:24:34.381  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (ALE) 7[BUY], (price: 32.71)
+2016-01-19 13:24:34.383  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 40.67 and simulated price: 41.13
+2016-01-19 13:24:34.383  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 40[SELL], (price: 41.13)
+2016-01-19 13:24:34.385  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 41.13 and simulated price: 41.62
+2016-01-19 13:24:34.385  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 25[BUY], (price: 41.62)
+2016-01-19 13:24:34.387  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 20.59 and simulated price: 21.54
+2016-01-19 13:24:34.387  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (POP) 78[SELL], (price: 21.54)
+2016-01-19 13:24:34.389  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 41.62 and simulated price: 42.57
+2016-01-19 13:24:34.389  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (GIN) 19[SELL], (price: 42.57)
+2016-01-19 13:24:34.392  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : @stock current price: 10.89 and simulated price: 11.73
+2016-01-19 13:24:34.392  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : Generated : (TEA) 6[SELL], (price: 11.73)
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : All Trades size: 37
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674354 --&gt;Trade{timestamp=1453202674354, stock=Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=11.73}, tradeType=BUY, shares=88, price=10.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674355 --&gt;Trade{timestamp=1453202674355, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=21.54}, tradeType=SELL, shares=53, price=20.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674357 --&gt;Trade{timestamp=1453202674357, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.71}, tradeType=BUY, shares=80, price=30.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674359 --&gt;Trade{timestamp=1453202674359, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=BUY, shares=20, price=40.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674361 --&gt;Trade{timestamp=1453202674361, stock=Stock{symbol='JOE', lastDividend=13.0, fixedDividend=0.0, parValue=250.0, tickerPrice=50.0}, tradeType=BUY, shares=36, price=50.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674363 --&gt;Trade{timestamp=1453202674363, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.71}, tradeType=BUY, shares=57, price=30.75}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674365 --&gt;Trade{timestamp=1453202674365, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=BUY, shares=53, price=40.13}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674367 --&gt;Trade{timestamp=1453202674367, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.71}, tradeType=BUY, shares=94, price=31.0}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674369 --&gt;Trade{timestamp=1453202674369, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=21.54}, tradeType=BUY, shares=81, price=20.59}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674371 --&gt;Trade{timestamp=1453202674371, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=SELL, shares=66, price=40.26}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674373 --&gt;Trade{timestamp=1453202674373, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.71}, tradeType=BUY, shares=6, price=31.79}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674375 --&gt;Trade{timestamp=1453202674375, stock=Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=11.73}, tradeType=SELL, shares=94, price=10.13}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674377 --&gt;Trade{timestamp=1453202674377, stock=Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=11.73}, tradeType=SELL, shares=53, price=10.89}
+2016-01-19 13:24:34.394  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674379 --&gt;Trade{timestamp=1453202674379, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=SELL, shares=95, price=40.67}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674381 --&gt;Trade{timestamp=1453202674381, stock=Stock{symbol='ALE', lastDividend=23.0, fixedDividend=0.0, parValue=60.0, tickerPrice=32.71}, tradeType=BUY, shares=7, price=32.71}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674383 --&gt;Trade{timestamp=1453202674383, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=SELL, shares=40, price=41.13}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674385 --&gt;Trade{timestamp=1453202674385, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=BUY, shares=25, price=41.62}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674387 --&gt;Trade{timestamp=1453202674387, stock=Stock{symbol='POP', lastDividend=8.0, fixedDividend=0.0, parValue=100.0, tickerPrice=21.54}, tradeType=SELL, shares=78, price=21.54}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674389 --&gt;Trade{timestamp=1453202674389, stock=Stock{symbol='GIN', lastDividend=8.0, fixedDividend=0.02, parValue=100.0, tickerPrice=42.57}, tradeType=SELL, shares=19, price=42.57}
+2016-01-19 13:24:34.395  INFO 21385 --- [    Test worker] s.runners.StockRepoTradesLoaderTest      : 1453202674392 --&gt;Trade{timestamp=1453202674392, stock=Stock{symbol='TEA', lastDividend=0.0, fixedDividend=0.0, parValue=100.0, tickerPrice=11.73}, tradeType=SELL, shares=6, price=11.73}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 2.0</a> at Jan 19, 2016 1:24:34 PM</p>
+</div>
+</div>
+</body>
